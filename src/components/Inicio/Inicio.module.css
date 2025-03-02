@@ -6,7 +6,7 @@
   
   /* Estilo del header */
   .header {
-    background-image: url('assets/images/fondo_header.jpg');
+    background-image: url('/assets/images/fondo_header.jpg');
     background-size: cover;
     color: white;
     padding: 40px;
