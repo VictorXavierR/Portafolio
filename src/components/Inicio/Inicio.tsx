@@ -87,7 +87,7 @@ export function Inicio() {
               <p>Español, Inglés, Catalán</p>
             </div>
           </div>
-          <a href="/CV_Victor.pdf" download className={styles.download_button} type='button'>
+          <a href="https://victorxavierr.github.io/Portafolio/CV_Victor.pdf" download className={styles.download_button} type='button'>
             <i className="fas fa-download"></i>
             Descargar CV
           </a>
