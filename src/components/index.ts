@@ -1,0 +1,2 @@
+export {Inicio} from './Inicio';
+

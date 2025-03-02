@@ -1,0 +1,208 @@
+.inicio {
+    font-family: 'Arial', sans-serif;
+    padding: 0px;
+    background-color: #0f1729;
+  }
+  
+  /* Estilo del header */
+  .header {
+    background-image: url('src/assets/images/fondo_header.jpg');
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    text-align: left;
+    margin: 0;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo de las secciones */
+  section {
+    padding: 40px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Estilo de los proyectos */
+  .projects {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  
+  .project {
+    padding: 20px;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    color:#333;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .project li{
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .about{
+    text-align: left;
+    margin: 0;
+  }
+  
+  /* Estilo del enlace de contacto */
+
+  .contact{
+    text-align: left;
+    padding: 40px;
+  }
+  .contactLink {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .contactLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo del footer */
+  .footer {
+    text-align: right;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .profile_image{
+    width: 90%;
+    height: 90%;
+    display: block;
+  }
+
+  .profile_image_container {
+    position: absolute; /* Hace que el contenedor de la imagen se posicione absolutamente */
+    top: 72%; /* Ajusta esta propiedad para desplazar el contenedor hacia abajo */
+    left: 50%; /* Centra el contenedor horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el contenedor */
+    z-index: 10; /* Asegura que el contenedor de la imagen esté por encima del contenedor inferior */
+  }
+  .linkedin_button {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0077b5; /* Color de LinkedIn */
+    text-decoration: none;
+    font-size: 1.5rem; /* Ajusta el tamaño del ícono */
+    border-radius: 70%; /* Hace que el ícono sea circular */
+  }
+  .linkedin_button:hover {
+    color: #005582; /* Color de LinkedIn al pasar el ratón */
+  }
+  .icon {
+    font-size: 1.5rem; /* Ajusta el tamaño del ícono */
+    color: #ff6347; /* Color del ícono */
+    text-align: left;
+    padding-left: 5%; /* Ajusta el relleno a la izquierda */
+}
+.icon p {
+  color:#666; /* Color blanco para las etiquetas <p> dentro de .anniversary_icon */
+  padding-left: 2%; /* Ajusta el relleno a la izquierda */
+}
+
+.download_button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff3a17; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  text-decoration: none;
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de la fuente */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.download_button:hover {
+  background-color: #ff6347; /* Color de fondo al pasar el ratón */
+  color: white; /* Color del texto al pasar el ratón */
+  text-decoration: none; /* Quita el subrayado al pasar el ratón */
+}
+.github_button {
+  display: inline-block;
+  color: #fff; /* Color del texto */
+  background-color: #333; /* Color de fondo de GitHub */
+  text-decoration: none;
+  font-size: 1.5rem; /* Ajusta el tamaño del ícono */
+  width: 30px; /* Ancho fijo */
+  height: 30px; /* Alto fijo */
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px; /* Espaciado entre botones */
+}
+
+.github_button i {
+  font-size: 1.5rem; /* Ajusta el tamaño del ícono */
+}
+.padded_paragraph_github{
+  padding-top: 0.5%;
+  padding-left: 0.5%;
+}
+.github_button:hover {
+  background-color: #24292e; /* Color de fondo de GitHub al pasar el ratón */
+}
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0;
+}
+
+.contact_form label {
+  margin-top: 10px;
+  font-weight: bold;
+  color:#333;
+}
+
+.contact_form input,
+.contact_form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact_form input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact_form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
