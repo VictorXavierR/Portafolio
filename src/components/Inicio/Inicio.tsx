@@ -41,7 +41,7 @@ export function Inicio() {
           </div>
           <div className='col-lg-6'>
             <div className={styles.profile_image_container}>
-              <img src="src/assets/images/foto_perfil.jpg" className={styles.profile_image}></img>
+              <img src="assets/images/foto_perfil.jpg" className={styles.profile_image}></img>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export function Inicio() {
               <p>Español, Inglés, Catalán</p>
             </div>
           </div>
-          <a href="src\assets\documents\CV_Victor.pdf" download className={styles.download_button} type='button'>
+          <a href="/CV_Victor.pdf" download className={styles.download_button} type='button'>
             <i className="fas fa-download"></i>
             Descargar CV
           </a>
