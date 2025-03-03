@@ -1,5 +1,5 @@
 import styles from './Inicio.module.css';
-import React, { useRef,useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { sendEmail } from '../../services/emailService';
 import ReCAPTCHA from 'react-google-recaptcha';
 export function Inicio() {
@@ -117,32 +117,48 @@ export function Inicio() {
       </div>
     </section>
     <section className={styles.contact}>
-      <h2>Contacto</h2>
-      <p>
-        Si quieres saber más o trabajar conmigo, no dudes en ponerte en contacto.
-      </p>
-      <form ref={form} onSubmit={handleSubmit} className={styles.contact_form}>
-        <label>Nombre</label>
-        <input type="text" name="user_name" required />
-        <label>Email</label>
-        <input type="email" name="user_email" required />
-        <label>Mensaje</label>
-        <textarea name="message" required />
-        <div className={styles.recaptcha}>
-            <ReCAPTCHA
-              sitekey="6LctIOcqAAAAADdwA6MCSOkY2n32fb2fW3YYolVE"  // Reemplaza con tu clave del sitio
-              onChange={onCaptchaChange}
-            />
+      <div className='row'>
+        <div className='col-lg-6'>
+          <h2>Contacto</h2>
+          <p>
+            Si quieres saber más o trabajar conmigo, no dudes en ponerte en contacto.
+          </p>
+          <form ref={form} onSubmit={handleSubmit} className={styles.contact_form}>
+            <label>Nombre</label>
+            <input type="text" name="user_name" required />
+            <label>Email</label>
+            <input type="email" name="user_email" required />
+            <label>Mensaje</label>
+            <textarea name="message" required />
+            <div style={{ display: "flex", marginTop: "10px", borderRadius: "5px", transform: "scale(0.85)", alignSelf: "flex-start", marginLeft: "-20px" }}>
+              <ReCAPTCHA
+                sitekey="6LctIOcqAAAAADdwA6MCSOkY2n32fb2fW3YYolVE" // Reemplaza con tu clave del sitio  
+                onChange={onCaptchaChange}
+              />
+            </div>
+            <input type="submit" value="Enviar" />
+          </form>
         </div>
-        <input type="submit" value="Enviar" />
-      </form>
+        <div className='col-lg-6'>
+          <img src="assets/images/imagen_contacto.png" className={styles.contact_image}></img>
+        </div>
+      </div>
     </section>
-
     <footer className={styles.footer}>
-      <p>&copy; 2025 Mi Portafolio</p>
-      <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" className={styles.linkedin_button}>
-        <i className="fab fa-linkedin"></i>
-      </a>
+      <div className='row'>
+        <div className='col-lg-3'>
+          <p>Víctor Xavier Rodríguez <br></br>&copy; 2025</p>
+        </div>
+        <div className='col-lg-5'>
+          <p>Desarrollador de Aplicaciones Multiplataforma</p>
+        </div>
+        <div className='col-lg-4 row'>
+          <p>Sigueme en Linkedin</p>
+          <a href="https://www.linkedin.com/in/victor-xavier-7aa001206/" target="_blank" rel="noopener noreferrer" className={styles.linkedin_button}>
+            <i className="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </footer>
   </div>;
 }
