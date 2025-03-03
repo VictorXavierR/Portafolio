@@ -146,13 +146,13 @@ export function Inicio() {
     </section>
     <footer className={styles.footer}>
       <div className='row'>
-        <div className='col-lg-3'>
-          <p>Víctor Xavier Rodríguez <br></br>&copy; 2025</p>
+        <div className='col-lg-3 col-md-4 col-sm-12'>
+          <p className='footer_nombre'>Víctor Xavier Rodríguez <br></br>&copy; 2025</p>
         </div>
-        <div className='col-lg-5'>
-          <p>Desarrollador de Aplicaciones Multiplataforma</p>
+        <div className='col-lg-5 col-md-8 col-sm-12'>
+          <p className='footer_titulo'>Desarrollador de Aplicaciones Multiplataforma</p>
         </div>
-        <div className='col-lg-4 row'>
+        <div className='col-lg-4 col-md-12 col-sm-12 row'>
           <p>Sigueme en Linkedin</p>
           <a href="https://www.linkedin.com/in/victor-xavier-7aa001206/" target="_blank" rel="noopener noreferrer" className={styles.linkedin_button}>
             <i className="fab fa-linkedin"></i>

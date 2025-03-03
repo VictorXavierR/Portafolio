@@ -276,6 +276,7 @@ p {
   .footer .col-lg-4.row {
     flex-direction: column;
     align-items: flex-start;
+    margin:0;
   }
   .footer a {
     margin-bottom: 5px; /* Reduce el margen inferior de los enlaces */
@@ -286,6 +287,15 @@ p {
   .profile_image {
     display: none; /* Oculta la imagen en dispositivos móviles */
   }
+  .footer_nombre{
+    margin-left: -10px;
+  }
+  .footer_titulo {
+    margin-left: -100px;
+    display: block;
+    position: relative;
+  }
+
 }
 
 /* Media query para tabletas */
@@ -298,6 +308,9 @@ p {
     max-width: 210px; /* Ajusta el tamaño máximo de la imagen en tabletas */
   }
   .contact_image {
-    content: url("assets/images/imagen_contacto_tablet.png"); /* Cambia la imagen en tabletas */
+    content: url("/assets/images/imagen_contacto_tablet.png"); /* Cambia la imagen en tabletas */
+  }
+  .footer_nombre{
+    margin-left: -10px;
   }
 }
