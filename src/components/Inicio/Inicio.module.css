@@ -256,6 +256,32 @@ p {
   height: auto;
 }
 
+.bubble {
+  position: relative;
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  max-width: 300px;
+  margin-top: 15px;
+  font-size: 14px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pseudoelemento para la "cola" de la burbuja */
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #d4edda transparent transparent transparent;
+}
+
 /* Media query para dispositivos móviles*/
 @media (max-width: 767px) {
   .footer p {

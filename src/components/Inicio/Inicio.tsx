@@ -5,6 +5,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 export function Inicio() {
   const form = useRef<HTMLFormElement>(null);
   const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
 
   interface EmailFormElements extends HTMLFormControlsCollection {
     user_name: HTMLInputElement;
@@ -16,11 +17,16 @@ export function Inicio() {
     readonly elements: EmailFormElements;
   }
 
-  const handleSubmit = (e: React.FormEvent<EmailForm>) => {
+  const handleSubmit = async (e: React.FormEvent<EmailForm>) => {
     e.preventDefault();
     if (form.current && captchaValue) {
-      // Llamada a la función que maneja el envío de email con el valor del captcha
-      sendEmail(form.current, captchaValue);
+      try {
+        await sendEmail(form.current, captchaValue);
+        setMessage("¡Mensaje enviado con éxito! Me pondré en contacto pronto.");
+        form.current.reset(); // Opcional: Resetea el formulario después del envío
+      } catch (error) {
+        setMessage("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+      }
     } else {
       alert('Por favor, completa el reCAPTCHA');
     }
@@ -136,7 +142,14 @@ export function Inicio() {
                 onChange={onCaptchaChange}
               />
             </div>
-            <input type="submit" value="Enviar" />
+            <div className='row' style={{paddingLeft:"15px"}}>
+              <input type="submit" value="Enviar" />
+              {message && (
+                <div className={styles.bubble}>
+                  {message}
+                </div>
+              )}
+            </div>
           </form>
         </div>
         <div className='col-lg-6'>
