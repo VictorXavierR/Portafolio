@@ -146,14 +146,23 @@ export function Inicio() {
     </section>
     <footer className={styles.footer}>
       <div className='row'>
-        <div className='col-lg-3 col-md-4 col-sm-12'>
+        <div className='col-lg-3 d-none d-lg-block' style={{ paddingLeft: "0px" }}>
           <p className='footer_nombre'>Víctor Xavier Rodríguez <br></br>&copy; 2025</p>
         </div>
-        <div className='col-lg-5 col-md-8 col-sm-12'>
+        <div className='col-md-4 d-none d-lg-none d-md-block' style={{ paddingLeft: "0px" }}>
+          <p className='footer_nombre'>Víctor Xavier Rodríguez <br></br>&copy; 2025</p>
+        </div>
+        <div className='col-sm-12 d-block d-md-none' style={{ paddingLeft: "0px" }}>
+          <p className='footer_nombre'>Víctor Xavier Rodríguez <br></br>&copy; 2025</p>
+        </div>
+        <div className='col-lg-6 col-md-8 d-none d-sm-block' style={{ paddingLeft: "60px" }}>
           <p className='footer_titulo'>Desarrollador de Aplicaciones Multiplataforma</p>
         </div>
-        <div className='col-lg-4 col-md-12 col-sm-12 row'>
-          <p>Sigueme en Linkedin</p>
+        <div className='col-sm-12 d-block d-md-none' style={{ paddingLeft: "0px" }}>
+          <p className='footer_titulo'>Desarrollador de Aplicaciones Multiplataforma</p>
+        </div>
+        <div className='col-lg-3 col-md-12 col-sm-12 row'>
+          <p className='p_linkedin'>Sigueme en Linkedin</p>
           <a href="https://www.linkedin.com/in/victor-xavier-7aa001206/" target="_blank" rel="noopener noreferrer" className={styles.linkedin_button}>
             <i className="fab fa-linkedin"></i>
           </a>

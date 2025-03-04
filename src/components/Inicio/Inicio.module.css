@@ -264,7 +264,7 @@ p {
   }
   .footer .row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end; /* Asegura que todos los elementos estén alineados a la izquierda */
   }
   .footer .col-lg-3,
   .footer .col-lg-5,
@@ -272,11 +272,6 @@ p {
     width: 100%;
     margin-bottom: 10px;
     /* Reduce el espacio entre los elementos */
-  }
-  .footer .col-lg-4.row {
-    flex-direction: column;
-    align-items: flex-start;
-    margin:0;
   }
   .footer a {
     margin-bottom: 5px; /* Reduce el margen inferior de los enlaces */
@@ -287,15 +282,6 @@ p {
   .profile_image {
     display: none; /* Oculta la imagen en dispositivos móviles */
   }
-  .footer_nombre{
-    margin-left: -10px;
-  }
-  .footer_titulo {
-    margin-left: -100px;
-    display: block;
-    position: relative;
-  }
-
 }
 
 /* Media query para tabletas */
