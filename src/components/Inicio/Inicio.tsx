@@ -78,7 +78,7 @@ export function Inicio() {
           <div className={styles.icon}>
             <div className='row'>
               <i className="fas fa-map-marker-alt"></i>
-              <p>Cangas del Narcea, España</p>
+              <p>Lliçà D'amunt, España</p>
             </div>
           </div>
           <div className={styles.icon}>
@@ -93,7 +93,7 @@ export function Inicio() {
               <p>Español, Inglés, Catalán</p>
             </div>
           </div>
-          <a href="https://victorxavierr.github.io/Portafolio/CV_Victor.pdf" download className={styles.download_button} type='button'>
+          <a href="https://victorxavierr.github.io/Portafolio/CV_Victor_2025.pdf" download className={styles.download_button} type='button'>
             <i className="fas fa-download"></i>
             Descargar CV
           </a>
